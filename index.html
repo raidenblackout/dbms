@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>REAL TIME REPORTING SYSTEM</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="node_modules\bootstrap-icons\font\bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="/videoplayer/dist/plyr.js"></script>
+    <link rel="stylesheet" href="/videoplayer/dist/plyr.css" />
+    <link rel="stylesheet" href="player.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark justify-content-between">
+        <a class="navbar-brand " href="/">Realtime Reporting System</a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" style="color: white;" type="submit">Search</button>
+        </form>
+    </nav>
+    <div class="d-flex mt-1 justify-content-center" style="gap: 5px;">
+        <div class="d-flex flex-column flex-shrink-0 p-3 l-bar" style="width: 250px;">
+            <ul class="nav flex-column">
+                <li>
+                    <a href="#" class="nav-link  text-left"><i class="bi bi-house mr-sm-2"></i>Home</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-left"><i class="bi bi-search mr-sm-2"></i>Explore</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link  text-left"><i class="bi bi-bell mr-sm-2"></i>Notifications</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link  text-left"><i class="bi bi-bookmark mr-sm-2"></i>Bookmarks</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-left"><i class="bi bi-person mr-sm-2"></i>Profile</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-left"><i class="bi bi-file-bar-graph mr-sm-2"></i>Analytics</a>
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex flex-column flex-shrink-0 p-3 min-vh-100" style="max-width: 68.5%; width: 35%;"
+            id="container1">
+            <div class="post-comment-container">
+                <div class="post-container">
+                    <div class="icon">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <div class="post-body">
+                        <div class="post-header">
+                            <div class="post-title">
+                                Latin America
+                            </div>
+                            <a class="post-user"> @Latin</a>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-text">
+                                "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                                people." #9News
+                                "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                                people." #9News
+                                "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                                people." #9News
+                                "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                                people." #9News
+                                "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                                people." #9News
+                                "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                                people." #9News
+                                "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                                people." #9News
+                                "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                                people." #9News
+                                "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                                people." #9News
+                                "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                                people." #9News
+                                "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                                people." #9News
+                                "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                                people." #9News
+                                "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                                people." #9News
+                                "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                                people." #9News
+                                "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                                people." #9News
+                                "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                                people." #9News
+
+                            </div>
+                            <div class="post-image">
+                            </div>
+                            <div class="post-video">
+                            </div>
+                        </div>
+                        <div class="post-footer">
+                            <div class="post-footer-left">
+                                <div class="post-footer-icon">
+                                    <div class="post-votes">
+                                        <a href="#" class="btn"><i class="bi bi-heart"></i><i
+                                                class="bi bi-heart-fill"></i></a>
+                                    </div>
+                                    <div class="post-reach">
+                                        <a href="#" class="btn"><i class="bi bi-chat-left-text"></i><i
+                                                class="bi bi-chat-left-text-fill"></i></a>
+                                        <a href="#" class="btn"><i class="bi bi-share"> </i><i
+                                                class="bi bi-share-fill"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment-container">
+                    <div class="profile-icon icon">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <div class="comment-body">
+                        <div class="comment-header">
+                            <div class="comment-title">
+                                <a class="comment-user">@Latin</a>
+                            </div>
+                            <div class="comment-time">
+                                <a class="comment-time">1 hour ago</a>
+                            </div>
+                        </div>
+                        <div class="comment-content">
+                            <div class="comment-text">
+                                "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                                people." #9News
+                            </div>
+                            <div class="comment-image">
+                            </div>
+                            <div class="comment-video">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="post-comment-container">
+            <div class="post-container">
+                <div class="icon">
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="post-body">
+                    <div class="post-header">
+                        <div class="post-title">
+                            Latin America
+                        </div>
+                        <a class="post-user">
+                            Latin
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-text">
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                        </div>
+                        <div class="post-image">
+                        </div>
+                        <div class="post-video">
+                        </div>
+                    </div>
+                    <div class="post-footer">
+                        <div class="post-footer-left">
+                            <div class="post-footer-icon">
+                                <div class="post-votes">
+                                    <a href="#" class="btn"><i class="bi bi-heart"></i><i
+                                            class="bi bi-heart-fill"></i></a>
+                                </div>
+                                <div class="post-reach">
+                                    <a href="#" class="btn"><i class="bi bi-chat-left-text"></i><i
+                                            class="bi bi-chat-left-text-fill"></i></a>
+                                    <a href="#" class="btn"><i class="bi bi-share"> </i><i
+                                            class="bi bi-share-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="post-comment-container">
+            <div class="post-container">
+                <div class="icon">
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="post-body">
+                    <div class="post-header">
+                        <div class="post-title">
+                            Latin America
+                        </div>
+                        <a class="post-user">
+                            Latin
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-text">
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                        </div>
+                        <div class="post-image">
+                        </div>
+                        <div class="post-video">
+                            <video id="player" autoplay>
+                                <source src="/videoplayer/video/BLACKPINK - '불장난 (PLAYING WITH FIRE)' M_V_3.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="post-footer">
+                        <div class="post-footer-left">
+                            <div class="post-footer-icon">
+                                <div class="post-votes">
+                                    <a href="#" class="btn"><i class="bi bi-heart"></i><i
+                                            class="bi bi-heart-fill"></i></a>
+                                </div>
+                                <div class="post-reach">
+                                    <a href="#" class="btn"><i class="bi bi-chat-left-text"></i><i
+                                            class="bi bi-chat-left-text-fill"></i></a>
+                                    <a href="#" class="btn"><i class="bi bi-share"> </i><i
+                                            class="bi bi-share-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="post-comment-container">
+            <div class="post-container">
+                <div class="icon">
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="post-body">
+                    <div class="post-header">
+                        <div class="post-title">
+                            Latin America
+                        </div>
+                        <a class="post-user">
+                            Latin
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-text">
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+
+                        </div>
+                        <div class="post-image">
+                        </div>
+                        <div class="post-video">
+                        </div>
+                    </div>
+                    <div class="post-footer">
+                        <div class="post-footer-left">
+                            <div class="post-footer-icon">
+                                <div class="post-votes">
+                                    <a href="#" class="btn"><i class="bi bi-heart"></i><i
+                                            class="bi bi-heart-fill"></i></a>
+                                </div>
+                                <div class="post-reach">
+                                    <a href="#" class="btn"><i class="bi bi-chat-left-text"></i><i
+                                            class="bi bi-chat-left-text-fill"></i></a>
+                                    <a href="#" class="btn"><i class="bi bi-share"> </i><i
+                                            class="bi bi-share-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="post-comment-container">
+            <div class="post-container">
+                <div class="icon">
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="post-body">
+                    <div class="post-header">
+                        <div class="post-title">
+                            Latin America
+                        </div>
+                        <a class="post-user">
+                            Latin
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-text">
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+                            "With Christmas only a few weeks away I think it will destroy Christmas for a lot of
+                            people." #9News
+
+                        </div>
+                        <div class="post-image">
+                        </div>
+                        <div class="post-video">
+                        </div>
+                    </div>
+                    <div class="post-footer">
+                        <div class="post-footer-left">
+                            <div class="post-footer-icon">
+                                <div class="post-votes">
+                                    <a href="#" class="btn"><i class="bi bi-heart"></i><i
+                                            class="bi bi-heart-fill"></i></a>
+                                </div>
+                                <div class="post-reach">
+                                    <a href="#" class="btn"><i class="bi bi-chat-left-text"></i><i
+                                            class="bi bi-chat-left-text-fill"></i></a>
+                                    <a href="#" class="btn"><i class="bi bi-share"> </i><i
+                                            class="bi bi-share-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="d-flex flex-column flex-shrink-0 p-3 min-vh-100" style="width: 250px;"></div>
+
+    </div>
+    <script>
+        const controls =
+            [
+                'play-large', // The large play button in the center
+                'restart', // Restart playback
+                'rewind', // Rewind by the seek time (default 10 seconds)
+                'play', // Play/pause playback
+                'fast-forward', // Fast forward by the seek time (default 10 seconds)
+                'progress', // The progress bar and scrubber for playback and buffering
+                'current-time', // The current time of playback
+                'duration', // The full duration of the media
+                'mute', // Toggle mute
+                'volume',
+                'captions', // Toggle captions
+                'settings', // Settings menu
+                'pip', // Picture-in-picture (currently Safari only)
+                'airplay', // Airplay (currently Safari only)
+                'fullscreen', // Toggle fullscreen
+                'repeat', // Toggle repeat
+            ];
+        const player = new Plyr('#player', { controls });
+    </script>
+    <script src="videoplayer.js"></script>
+</body>
+
+</html>
