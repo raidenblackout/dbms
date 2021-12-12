@@ -214,6 +214,7 @@ body >* {
 .post-comment{
     border-top:rgba(122, 122, 122, 0.5) solid 1px;
     display: flex;
+    background-color: rgb(232, 237, 240);
 }
 .post-comment > *{
     width: 100%;
@@ -292,4 +293,7 @@ p{
 }
 .main-body{
     padding-top: 56px;
+}
+.input-media-left{
+    font-size: 25px;
 }
