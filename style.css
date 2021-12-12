@@ -106,8 +106,10 @@ body >* {
     border-radius: 50%;
     background-color: rgba(122, 122, 122, 0.5);
 }
-.icon{
+.post-container .icon{
     padding-top: 10px;
+}
+.icon{
     display: flex;
     justify-content: center;
 }
@@ -162,11 +164,19 @@ body >* {
 .comment-container{
     display: flex;
     background-color: rgb(232, 237, 240);
-    padding-top: 20px;
     border-top:rgba(122, 122, 122, 0.5) solid 1px;
 }
-.comment-container .profile-icon{
+.profile-icon{
     width: 100px;
+    align-items: center;
+}
+.profile-icon .fa{
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(122, 122, 122, 0.5);
 }
 .comment-header{
     display: flex;
@@ -200,7 +210,6 @@ body >* {
 .post-comment{
     border-top:rgba(122, 122, 122, 0.5) solid 1px;
     display: flex;
-    padding-top: 20px;
 }
 .post-comment > *{
     width: 100%;
@@ -222,4 +231,10 @@ textarea{
 }
 .post-user{
     min-width: 70px;
+}
+.fa::before{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
 }
