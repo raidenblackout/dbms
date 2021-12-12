@@ -223,3 +223,13 @@ textarea{
 .post-user{
     min-width: 70px;
 }
+.emergency-headline{
+    margin-bottom: 10px;
+    text-decoration-style: solid;
+}
+.emergency-content{
+    margin-bottom: 10px;
+}
+p{
+    text-decoration-color: #000;
+}
