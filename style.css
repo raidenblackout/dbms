@@ -162,7 +162,6 @@ body >* {
     display: flex;
     background-color: rgb(232, 237, 240);
     padding-top: 20px;
-    padding-bottom: 20px;
     border-top:rgba(122, 122, 122, 0.5) solid 1px;
 }
 .comment-container .profile-icon{
@@ -182,4 +181,15 @@ body >* {
 .comment-title{
     font-weight: bold;
     padding-right: 10px;
+}
+.comment-footer-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.comment-footer-icon i{
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.1em 0.35em;
 }

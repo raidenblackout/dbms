@@ -11,10 +11,8 @@ const isOutOfViewport = (element) => {
 document.addEventListener('scroll', () => {
     const video = document.querySelector('video');
     if (isOutOfViewport(video)) {
-        try{
-            player.pip=true;
-        }catch(e){
-            player.pauseVideo();
-        }
+        player.pause();
+    }else{
+        player.play();
     }
 });
