@@ -1,18 +1,23 @@
 const isOutOfViewport = (element) => {
-    const rect = element.getBoundingClientRect();
-    return (
-        rect.bottom < 0 ||
-        rect.right < 0 ||
-        rect.left > window.innerWidth ||
-        rect.top > window.innerHeight
-    );
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.bottom < 0 ||
+    rect.right < 0 ||
+    rect.left > window.innerWidth ||
+    rect.top > window.innerHeight
+  );
 };
 
-document.addEventListener('scroll', () => {
-    const video = document.querySelector('video');
-    if (isOutOfViewport(video)) {
+$(document).ready(() => {
+  $(document).on("scroll", () => {
+    const video = $("video");
+    //foreach video
+    video.each((index, element) => {
+      if (isOutOfViewport(element) && player.pip == false) {
         player.pause();
-    }else{
+      } else {
         player.play();
-    }
+      }
+    });
+  });
 });
