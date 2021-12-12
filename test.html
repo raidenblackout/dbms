@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>REAL TIME REPORTING SYSTEM</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="node_modules\bootstrap-icons\font\bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="/videoplayer/dist/plyr.js"></script>
+    <link rel="stylesheet" href="/videoplayer/dist/plyr.css" />
+    <link rel="stylesheet" href="player.css" />
+    <script src="/main.js"></script>
+    <script src="/getData.js"></script>
+</head>
+
+<body>
+    <div class="top-bar">
+    <nav class="navbar navbar-dark bg-dark justify-content-between">
+        <a class="navbar-brand " href="/">Realtime Reporting System</a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" style="color: white;" type="submit">Search</button>
+        </form>
+    </nav>
+    </div>  
+    <div class="d-flex justify-content-center main-body" style="gap: 5px;">
+        <div class="d-flex flex-column flex-shrink-0 p-3 l-bar" style="width: 250px;">
+            <ul class="nav flex-column">
+                <li>
+                    <a  class="nav-link  text-left"><i class="bi bi-house mr-sm-2"></i>Home</a>
+                </li>
+                <li>
+                    <a  class="nav-link text-left"><i class="bi bi-search mr-sm-2"></i>Explore</a>
+                </li>
+                <li>
+                    <a  class="nav-link  text-left"><i class="bi bi-bell mr-sm-2"></i>Notifications</a>
+                </li>
+                <li>
+                    <a  class="nav-link  text-left"><i class="bi bi-bookmark mr-sm-2"></i>Bookmarks</a>
+                </li>
+                <li>
+                    <a  class="nav-link text-left"><i class="bi bi-person mr-sm-2"></i>Profile</a>
+                </li>
+                <li>
+                    <a  class="nav-link text-left"><i class="bi bi-file-bar-graph mr-sm-2"></i>Analytics</a>
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex flex-column flex-shrink-0 p-3 min-vh-100" style="max-width: 68.5%; width: 35%;"
+            id="container1">
+            <div class="user-post-submit">
+                <div class="icon">
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="input-body">
+                    <div class="input-content">
+                        <textarea class="form-control" placeholder="What's on your mind?"></textarea>
+                    </div>
+                    <div class="post-privacy-selection"></div>
+                    <div class="input-media">
+                        <div class="input-media-left">
+                            <i class="fa fa-camera"></i>
+                            <i class="fa fa-video-camera"></i>
+                            <i class="fa fa-image"></i>
+                        </div>
+                        <div class="input-media-right">
+                            <button class="btn btn-secondary">Post</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="d-flex flex-column flex-shrink-0 p-3 min-vh-100" style="width: 250px;">
+            <div class="emergency-panel-section">
+                <div class="emergency-headline">
+                    <p>Emergency headline</p>
+    
+                </div>
+                <div class="emergency-content">
+                    All the emergency content will be shown here
+    
+                </div>
+            </div>
+            <div class="emergency-panel-section">
+                <div class="emergency-headline">
+                    <p>Emergency headline</p>
+    
+                </div>
+                <div class="emergency-content">
+                    All the emergency content will be shown here
+    
+                </div>
+            </div>
+            <div class="emergency-panel-section">
+                <div class="emergency-headline">
+                    <p>Emergency headline</p>
+    
+                </div>
+                <div class="emergency-content">
+                    All the emergency content will be shown here
+    
+                </div>
+            </div>
+            <div class="emergency-panel-section">
+                <div class="emergency-headline">
+                    <p>Emergency headline</p>
+    
+                </div>
+                <div class="emergency-content">
+                    All the emergency content will be shown here
+    
+                </div>
+            </div>
+            <div class="emergency-panel-section">
+                <div class="emergency-headline">
+                    <p>Emergency headline</p>
+    
+                </div>
+                <div class="emergency-content">
+                    All the emergency content will be shown here
+    
+                </div>
+            </div>
+            <div class="emergency-panel-section">
+                <div class="emergency-headline">
+                    <p>Emergency headline</p>
+    
+                </div>
+                <div class="emergency-content">
+                    All the emergency content will be shown here
+    
+                </div>
+            </div>
+    
+
+    </div>
+    <script>
+        const controls =
+            [
+                'play-large',
+                'restart',
+                'rewind',
+                'play',
+                'fast-forward',
+                'progress',
+                'current-time',
+                'duration',
+                'mute',
+                'volume',
+                'captions',
+                'settings',
+                'pip',
+                'airplay',
+                'fullscreen',
+                'repeat',
+            ];
+        const player = new Plyr('#player', { controls });
+    </script>
+    <script src="videoplayer.js"></script>
+</body>
+
+</html>

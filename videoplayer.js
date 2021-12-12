@@ -7,17 +7,13 @@ const isOutOfViewport = (element) => {
     rect.top > window.innerHeight
   );
 };
-
 $(document).ready(() => {
   $(document).on("scroll", () => {
     const video = $("video");
-    //foreach video
     video.each((index, element) => {
       if (isOutOfViewport(element) && player.pip == false) {
         player.pause();
-      } else {
-        player.play();
-      }
+      } 
     });
   });
 });
