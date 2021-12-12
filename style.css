@@ -1,5 +1,7 @@
 body{
     background-color: #f2f2f2;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 body >* {
     background-color: #f2f2f2;
@@ -38,6 +40,7 @@ body >* {
 #container1{
     border-left: rgba(122, 122, 122, 0.5) solid 1px;
     border-right: rgba(122, 122, 122, 0.5) solid 1px;
+    background-color: rgba(223, 213, 213, 0.5);
 }
 
 .news-container h1,h2,h3{
@@ -186,8 +189,10 @@ body >* {
     margin-bottom: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background-color: rgb(232, 237, 240);
+    background-color: #f2f2f2;
     border-bottom: rgba(122, 122, 122, 0.5) ;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 .comment-title{
     font-weight: bold;
@@ -234,11 +239,53 @@ textarea{
 }
 .emergency-headline{
     margin-bottom: 10px;
-    text-decoration-style: solid;
+    font-weight: bold;
 }
 .emergency-content{
     margin-bottom: 10px;
 }
+.emergency-panel-section{
+    border-bottom: rgba(122, 122, 122, 0.5) solid 1px;
+}
 p{
     text-decoration-color: #000;
+}
+.user-post-submit{
+    display: flex;
+    margin-bottom: 10px;
+    height: 120px;
+}
+.user-post-submit > *{
+    width: 100%;
+}
+.user-post-submit .icon{
+    width: 70px;
+}
+.user-post-submit .fa-user{
+    font-size: 50px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(122, 122, 122, 0.5);
+}
+.input-media{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+.form-control{
+    background-color: #f2f2f2
+}
+.input-media-right .btn{
+    color:rgb(232, 237, 240)
+}
+.top-bar{
+    position: fixed;
+    width: 100%;
+    margin-top: 0;
+}
+.main-body{
+    padding-top: 56px;
 }
